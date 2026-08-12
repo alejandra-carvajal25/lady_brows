@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Servicios | BellaEssence Studio</title>
+  <meta name="description"
+    content="Descubre nuestros servicios de belleza: Manicure spa, pedicure, uñas acrílicas, nail art, maquillaje profesional, peinados y tratamientos faciales.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .category-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .tab-btn {
+      padding: 0.6rem 1.4rem;
+      border-radius: var(--radius-full);
+      background: #FFFFFF;
+      border: 1.5px solid rgba(224, 93, 130, 0.2);
+      color: var(--color-text-dark);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tab-btn:hover,
+    .tab-btn.active {
+      background: var(--color-primary);
+      color: #FFFFFF;
+      border-color: var(--color-primary);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-sparkle">✦</span>
+        <span data-salon="nombre">Lady´s Spa</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+          <li><a href="index.html#galeria" class="nav-link">Galería</a></li>
+          <li><a href="agenda.html" class="nav-link">Agendar Cita</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+          <li>
+            <a href="agenda.html" class="btn btn-primary btn-sm">Reservar Cita</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="hamburger-btn" aria-label="Abrir menú de navegación">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- BANNER DE ENCABEZADO -->
+  <section
+    style="background: linear-gradient(135deg, #FFF5F7 0%, #F9E4EB 100%); padding: 8rem 0 4rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-subtitle">Catálogo Completo</span>
+      <h1 class="section-title" style="font-size: 3.2rem;">Servicios de Belleza & Cuidado</h1>
+      <p class="section-description" style="max-width: 600px; margin: 0 auto;">
+        Descubre nuestros tratamientos diseñados con productos de alta gama y técnicas avanzadas para resaltar tu estilo
+        único.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE SERVICIOS DINÁMICOS CON FILTROS -->
+  <section class="section-padding" style="background: var(--color-bg-body);">
+    <div class="container">
+
+      <!-- Pestañas de Filtrado por Categoría -->
+      <div class="category-tabs" id="categoryTabs">
+        <button class="tab-btn active" data-cat="todos">Todos los Servicios</button>
+        <button class="tab-btn" data-cat="uñas">💅 Uñas & Manicure</button>
+        <button class="tab-btn" data-cat="maquillaje">💄 Maquillaje</button>
+        <button class="tab-btn" data-cat="peinados">💇‍♀️ Peinados</button>
+        <button class="tab-btn" data-cat="facial">✨ Cuidado Facial</button>
+      </div>
+
+      <!-- Grilla de Tarjetas de Servicios -->
+      <div class="services-grid" id="fullServicesGrid">
+        <!-- Renderizado dinámico vía JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-sparkle">✦</span>
+          <span data-salon="nombre">BellaEssence Studio</span>
+        </a>
+        <p data-salon="eslogan">Realza tu belleza, resalta tu esencia.</p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="agenda.html">Agendar Cita</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="admin.html" style="color: var(--color-accent-gold);">🔐 Admin Panel</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contacto</h4>
+        <ul class="footer-links">
+          <li data-salon="telefono">+57 300 123 4567</li>
+          <li data-salon="direccion">Calle 45 # 18 - 24</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Reservas</h4>
+        <a href="agenda.html" class="btn btn-primary btn-sm" style="width: 100%;">Agendar Cita en Línea</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">&copy; 2026 BellaEssence Studio. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderServicios('todos');
+
+      const tabs = document.querySelectorAll('.tab-btn');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const cat = tab.getAttribute('data-cat');
+          renderServicios(cat);
+        });
+      });
+    });
+
+    function renderServicios(categoria) {
+      const grid = document.getElementById('fullServicesGrid');
+      if (!grid || typeof SALON_CONFIG === 'undefined') return;
+
+      const lista = categoria === 'todos'
+        ? SALON_CONFIG.servicios
+        : SALON_CONFIG.servicios.filter(s => s.categoria === categoria);
+
+      grid.innerHTML = '';
+
+      lista.forEach(serv => {
+        const card = document.createElement('div');
+        card.className = 'service-card';
+        card.innerHTML = `
+          <div class="service-card-image">
+            <img src="${serv.imagen}" alt="${serv.nombre}">
+            ${serv.destacado ? '<span class="service-badge">Popular</span>' : ''}
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">${serv.nombre}</h3>
+            <p class="service-card-desc">${serv.descripcion}</p>
+            <div class="service-card-meta">
+              <span class="service-price">$${serv.precio.toLocaleString()}</span>
+              <span class="service-duration">⏱ ${serv.duracion}</span>
+            </div>
+            <a href="agenda.html?servicio=${serv.id}" class="btn btn-primary btn-sm" style="width: 100%;">Agendar Cita</a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+  </script>
+</body>
+
+</html>

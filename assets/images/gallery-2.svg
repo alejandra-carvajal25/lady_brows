@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_gallery-2_svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#F5CADA"/>
+    </linearGradient>
+    <filter id="shadow_gallery-2_svg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#E05D82" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad_gallery-2_svg)"/>
+  <circle cx="400" cy="230" r="130" fill="#FFFFFF" opacity="0.6" filter="url(#shadow_gallery-2_svg)"/>
+  <circle cx="400" cy="230" r="105" fill="#FFFFFF" opacity="0.95"/>
+  <g transform="translate(365, 185) scale(2.2)" stroke="#E05D82" stroke-width="2" fill="none">
+  <path d="M10 38L25 15L30 20L15 43Z" fill="#FFE4EC"/>
+  <path d="M25 15L29 9C30 7 33 7 34 9L35 11C36 13 36 15 34 16L30 20Z" fill="#E05D82"/>
+</g>
+  <text x="400" y="420" font-family="'Playfair Display', Georgia, serif" font-size="32" font-weight="bold" fill="#2D1E2F" text-anchor="middle">Maquillaje de Novia</text>
+  <text x="400" y="460" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#E05D82" text-anchor="middle">Galería de Trabajos #2</text>
+  <rect x="230" y="495" width="340" height="38" rx="19" fill="#FFFFFF" opacity="0.95" stroke="#E05D82" stroke-width="1.5"/>
+  <text x="400" y="520" font-family="sans-serif" font-size="13" font-weight="600" fill="#E05D82" text-anchor="middle">📷 Espacio reservado para tu fotografía</text>
+</svg>

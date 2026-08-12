@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_service-hairstyle_svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF0F3"/>
+      <stop offset="100%" stop-color="#EBC4D2"/>
+    </linearGradient>
+    <filter id="shadow_service-hairstyle_svg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#E05D82" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad_service-hairstyle_svg)"/>
+  <circle cx="400" cy="230" r="130" fill="#FFFFFF" opacity="0.6" filter="url(#shadow_service-hairstyle_svg)"/>
+  <circle cx="400" cy="230" r="105" fill="#FFFFFF" opacity="0.95"/>
+  <g transform="translate(355, 180) scale(2.5)" fill="#E05D82">
+  <path d="M18 0L21 12L33 15L21 18L18 30L15 18L3 15L15 12Z"/>
+</g>
+  <text x="400" y="420" font-family="'Playfair Display', Georgia, serif" font-size="32" font-weight="bold" fill="#2D1E2F" text-anchor="middle">Peinados & Ondas</text>
+  <text x="400" y="460" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#E05D82" text-anchor="middle">Estilos para momentos especiales</text>
+  <rect x="230" y="495" width="340" height="38" rx="19" fill="#FFFFFF" opacity="0.95" stroke="#E05D82" stroke-width="1.5"/>
+  <text x="400" y="520" font-family="sans-serif" font-size="13" font-weight="600" fill="#E05D82" text-anchor="middle">📷 Espacio reservado para tu fotografía</text>
+</svg>

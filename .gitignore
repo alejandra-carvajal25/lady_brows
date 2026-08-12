@@ -1,0 +1,17 @@
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+*.log
+
+# Netlify Build Directory
+.netlify/

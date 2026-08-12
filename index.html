@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lady Brows | Salón de Belleza Elegante & Manicure Spa</title>
+  <meta name="description"
+    content="Salón de belleza profesional. Servicios de manicure spa, pedicure, uñas acrílicas, maquillaje social, peinados y tratamientos faciales. Agenda tu cita en línea.">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVEGACIÓN Y HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-sparkle">✦</span>
+        <span data-salon="nombre">Lady Brows</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="agenda.html" class="nav-link">Agendar Cita</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+          <li>
+            <a href="agenda.html" class="btn btn-primary btn-sm">Reservar Cita</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="hamburger-btn" aria-label="Abrir menú de navegación">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>✦ Estética & Cuidado Personal</span>
+        </div>
+        <h1 class="hero-title">
+          Realza tu belleza, <br>
+          <span>resalta tu esencia</span>
+        </h1>
+        <p class="hero-subtitle" data-salon="eslogan">
+          Disfruta de una experiencia de belleza exclusiva y personalizada donde tus uñas, piel y estilo lucirán
+          radiantes e impecables.
+        </p>
+        <div class="hero-actions">
+          <a href="agenda.html" class="btn btn-primary">
+            <span>✨ Agendar Cita</span>
+          </a>
+          <a href="servicios.html" class="btn btn-secondary">
+            <span>Ver Servicios</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/images/hero-bg.svg" alt="Fotografía del Salón de Belleza BellaEssence Studio">
+        </div>
+        <div class="hero-experience-badge">
+          <div class="badge-number">4+</div>
+          <div class="badge-text">Años de Excelencia<br>& Experiencia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SOBRE NOSOTROS -->
+  <section class="about section-padding" id="sobre-nosotros">
+    <div class="container about-grid">
+      <div class="about-image-frame">
+        <img src="assets/images/owner.svg" alt="Valeria Mendoza - Propietaria y Estilista Principal">
+      </div>
+
+      <div class="about-content">
+        <span class="section-subtitle">Sobre Nosotros</span>
+        <h2 class="section-title">Pasión por realzar la belleza en cada detalle</h2>
+        <p class="section-description">
+          Soy <strong>Lady Carvajal</strong>, fundadora y especialista en belleza en Lady Brows. Mi
+          compromiso es ofrecerte un espacio de relajación y bienestar donde cada servicio se realiza con productos de
+          máxima calidad y una atención cálida y personalizada.
+        </p>
+
+        <div class="about-quote">
+          "La belleza florece cuando te regalas un momento especial para ti misma."
+        </div>
+
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Atención Personalizada</strong>
+              <p style="font-size: 0.85rem; color: var(--color-text-muted);">Tratamientos diseñados según tu estilo e
+                higiene estricta.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✦</div>
+            <div>
+              <strong>Productos Premium</strong>
+              <p style="font-size: 0.85rem; color: var(--color-text-muted);">Marcas líderes en esmaltado, acrílico y
+                cosmetología.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DESTACADO DE SERVICIOS -->
+  <section class="services section-padding" style="background: var(--color-primary-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Nuestros Servicios</span>
+        <h2 class="section-title">Experiencias creadas para ti</h2>
+        <p class="section-description">Explora nuestros tratamientos más populares y solicita tu cita en minutos.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Tarjeta 1 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="assets/images/service-manicure.svg" alt="Manicure Spa Premium">
+            <span class="service-badge">Popular</span>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Manicure Spa Premium</h3>
+            <p class="service-card-desc">Exfoliación, hidratación profunda con aceites esenciales, limado perfecto y
+              esmaltado semipermanente.</p>
+            <div class="service-card-meta">
+              <span class="service-price">$45.000</span>
+              <span class="service-duration">⏱ 60 min</span>
+            </div>
+            <a href="agenda.html?servicio=manicure-spa" class="btn btn-primary btn-sm" style="width: 100%;">Agendar
+              Cita</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="assets/images/service-pedicure.svg" alt="Pedicure Spa Relajante">
+            <span class="service-badge">Relajante</span>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Pedicure Spa Relajante</h3>
+            <p class="service-card-desc">Baño de sales aromáticas, remoción de asperezas, masaje exfoliante y mascarilla
+              hidratante.</p>
+            <div class="service-card-meta">
+              <span class="service-price">$55.000</span>
+              <span class="service-duration">⏱ 60 min</span>
+            </div>
+            <a href="agenda.html?servicio=pedicure-spa" class="btn btn-primary btn-sm" style="width: 100%;">Agendar
+              Cita</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="assets/images/service-makeup.svg" alt="Maquillaje Social">
+            <span class="service-badge">Eventos</span>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Maquillaje Social & Eventos</h3>
+            <p class="service-card-desc">Maquillaje profesional adaptado a la morfología de tu rostro y fijación de
+              larga duración.</p>
+            <div class="service-card-meta">
+              <span class="service-price">$120.000</span>
+              <span class="service-duration">⏱ 75 min</span>
+            </div>
+            <a href="agenda.html?servicio=maquillaje-social" class="btn btn-primary btn-sm" style="width: 100%;">Agendar
+              Cita</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="assets/images/service-facial.svg" alt="Limpieza Facial Profunda">
+            <span class="service-badge">Skin Care</span>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Limpieza Facial Profunda</h3>
+            <p class="service-card-desc">Higienización cutánea con vapor de ozono, alta frecuencia y mascarilla
+              scongestiva.</p>
+            <div class="service-card-meta">
+              <span class="service-price">$90.000</span>
+              <span class="service-duration">⏱ 90 min</span>
+            </div>
+            <a href="agenda.html?servicio=limpieza-facial" class="btn btn-primary btn-sm" style="width: 100%;">Agendar
+              Cita</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="servicios.html" class="btn btn-secondary">Ver Catálogo Completo de Servicios →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN GALERÍA / NUESTROS TRABAJOS -->
+  <section class="gallery section-padding" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Nuestros Trabajos</span>
+        <h2 class="section-title">Galería de Transformaciones</h2>
+        <p class="section-description">Haz clic en cualquier imagen para ver en detalle los resultados de nuestras
+          clientas.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-title="Esmaltado Semipermanente & Microglitter"
+          data-desc="Tono rosa pastel con destellos brillantes para un look delicado.">
+          <img src="assets/images/gallery-1.svg" alt="Trabajo de Manicure 1">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Uñas</span>
+            <h4 class="gallery-title">Esmaltado Semipermanente</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-title="Maquillaje de Novia & Eventos"
+          data-desc="Piel luminosa, tonos cálidos y acabado mate de larga duración.">
+          <img src="assets/images/gallery-2.svg" alt="Trabajo de Maquillaje 2">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Maquillaje</span>
+            <h4 class="gallery-title">Maquillaje Social</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-title="Peinado Recogido Bajo"
+          data-desc="Estilo sofisticado ideal para graduaciones y bodas.">
+          <img src="assets/images/gallery-3.svg" alt="Trabajo de Peinado 3">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Peinados</span>
+            <h4 class="gallery-title">Peinado Elegante</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-title="Uñas Acrílicas Baby Boomer"
+          data-desc="Degradado suave de blanco a rosado con pedrería.">
+          <img src="assets/images/gallery-4.svg" alt="Trabajo de Uñas Acrílicas 4">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Uñas</span>
+            <h4 class="gallery-title">Acrílicas Baby Boomer</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-title="Limpieza Facial Glow"
+          data-desc="Piel radiante e hidratada tras sesión de cuidado facial.">
+          <img src="assets/images/gallery-5.svg" alt="Tratamiento Facial 5">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Facial</span>
+            <h4 class="gallery-title">Facial Glow Spa</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-title="Laminado y Perfilado de Cejas"
+          data-desc="Cejas orgánicas bien definidas y ordenadas naturalmente.">
+          <img src="assets/images/gallery-6.svg" alt="Perfilado de Cejas 6">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Facial</span>
+            <h4 class="gallery-title">Perfilado & Laminado</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO RÁPIDO -->
+  <section class="contact-quick section-padding" style="background: #FFFFFF;">
+    <div class="container contact-grid">
+      <div>
+        <span class="section-subtitle">Contacto & Reservas</span>
+        <h2 class="section-title">¿Tienes preguntas o deseas reservar por WhatsApp?</h2>
+        <p class="section-description">Escríbenos directamente y con gusto te brindaremos atención personalizada y
+          asesoría en tus citas.</p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Dirección:</strong>
+              <p style="color: var(--color-text-muted);" data-salon="direccion">Calle 45 # 18 - 24, Bogotá</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <strong>Teléfono & WhatsApp:</strong>
+              <p style="color: var(--color-text-muted);" data-salon="telefono">+57 300 123 4567</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+          <a href="#" data-salon="whatsapp-link" class="btn btn-primary">
+            <span>💬 Chatear por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card" style="background: var(--color-primary-light); text-align: center;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 1rem;">Horarios de Atención</h3>
+        <p style="margin-bottom: 0.5rem;"><strong>Lunes a Viernes:</strong> 09:00 AM - 07:00 PM</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Sábados:</strong> 09:00 AM - 06:00 PM</p>
+        <p style="color: var(--color-danger); margin-bottom: 1.5rem;"><strong>Domingos y Festivos:</strong> Cerrado</p>
+
+        <a href="agenda.html" class="btn btn-secondary btn-sm" style="width: 100%;">Reservar Cita en Línea</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL PARA VER IMÁGENES DE GALERÍA -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Cerrar modal">&times;</button>
+      <div class="lightbox-image-wrapper">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <div class="lightbox-details">
+        <h3 class="lightbox-title"
+          style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-text-dark);"></h3>
+        <p class="lightbox-desc" style="color: var(--color-text-muted); font-size: 0.95rem; margin-top: 0.25rem;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-sparkle">✦</span>
+          <span data-salon="nombre">BellaEssence Studio</span>
+        </a>
+        <p data-salon="eslogan">Realza tu belleza, resalta tu esencia.</p>
+        <p style="margin-top: 0.75rem; font-size: 0.85rem;">Tu espacio exclusivo de manicure, estacionalidad y cuidado
+          facial.</p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Enlaces Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="agenda.html">Agendar Cita</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="admin.html" style="color: var(--color-accent-gold);">🔐 Admin Panel</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contacto</h4>
+        <ul class="footer-links">
+          <li data-salon="telefono">+57 300 123 4567</li>
+          <li data-salon="direccion">Calle 45 # 18 - 24</li>
+          <li>Bogotá, Colombia</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Redes Sociales</h4>
+        <p style="color: #B5A8B8; font-size: 0.9rem; margin-bottom: 1rem;">Síguenos para ver nuestros últimos diseños y
+          promociones.</p>
+        <a href="#" data-salon="whatsapp-link" class="btn btn-secondary btn-sm"
+          style="color: #FFF; border-color: rgba(255,255,255,0.3);">Instagram @bellaessence</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; <span id="year">2026</span> <span data-salon="nombre">BellaEssence Studio</span>. Todos los derechos
+        reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
