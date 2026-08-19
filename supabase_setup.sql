@@ -1,6 +1,6 @@
 -- ============================================================
 -- SCRIPT DE CONFIGURACIÓN DE BASE DE DATOS SUPABASE
--- Proyecto: BellaEssence Studio - Sistema de Citas
+-- Proyecto: lady brows - Sistema de Citas
 -- ============================================================
 
 -- 1. Creación de la Tabla 'citas'

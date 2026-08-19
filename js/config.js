@@ -48,8 +48,8 @@ const SALON_CONFIG = {
   // Credenciales de Supabase
   // Reemplazar estas cadenas con las credenciales reales provistas por Supabase:
   supabase: {
-    url: "https://tu-proyecto.supabase.co",
-    anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.tu_key_anonima_aqui"
+    url: "https://lqqzluncysydyhgfpgxi.supabase.co",
+    anonKey: "sb_publishable_8KOtovyX8bxrqMGZoGYC8A_xkNyrzHK"
   },
 
   // Clave de acceso de emergencia/demo para el panel de administración
